@@ -13,6 +13,7 @@ def table_create():
     c.execute('''CREATE TABLE SCORES
                      ([Generated_ID] INTEGER PRIMARY KEY,[Register_Number] integer, [Credit_Score] text)''')
     conn.commit()
+    conn.close()
 
 
 if __name__ == '__main__':

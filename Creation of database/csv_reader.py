@@ -19,6 +19,7 @@ def import_namelist():
         c.execute(sql)
 
     conn.commit()
+    conn.close()
 
 
 if __name__ == '__main__':
